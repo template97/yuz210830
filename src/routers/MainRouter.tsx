@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
-import "./MainRouter.css";
+import "./MainRouter.scss";
 
 const MainRouter: React.FC = () => {
   return (
