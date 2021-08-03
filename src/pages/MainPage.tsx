@@ -9,7 +9,7 @@ const MainPage: React.FC<Props> = (props) => {
 
   return (
     <div className="main-page">
-      <ButtonSolid size="large" onClick={() => history.push("/start")}>
+      <ButtonSolid size="large" onClick={() => history.push("/game")}>
         Start
       </ButtonSolid>
     </div>

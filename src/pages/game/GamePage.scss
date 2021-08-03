@@ -3,6 +3,13 @@
   height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  gap: 12px;
+
+  .game-page-button {
+    width: 120px;
+  }
 }
