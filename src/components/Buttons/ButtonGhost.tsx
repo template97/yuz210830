@@ -37,7 +37,7 @@ const ButtonGhost = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
   return (
     <button
       className={classNames(
-        "classum-button",
+        "custom-button",
         className,
         colorTheme,
         "ghost",

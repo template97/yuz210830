@@ -38,7 +38,7 @@ const ButtonSolid = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
     <button
       ref={ref}
       className={classNames(
-        "classum-button",
+        "custom-button",
         className,
         colorTheme,
         "solid",

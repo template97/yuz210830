@@ -38,7 +38,7 @@ const ButtonLine = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
     <button
       ref={ref}
       className={classNames(
-        "classum-button",
+        "custom-button",
         className,
         colorTheme,
         "line",

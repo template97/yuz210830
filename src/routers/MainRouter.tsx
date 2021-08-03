@@ -1,3 +1,4 @@
+import GamePage from "pages/GamePage";
 import React, { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import MainPage from "../pages/MainPage";
@@ -9,6 +10,9 @@ const MainRouter: React.FC = () => {
       <Switch>
         <Route exact path="/">
           <MainPage />
+        </Route>
+        <Route exact path="/start">
+          <GamePage />
         </Route>
       </Switch>
     </>

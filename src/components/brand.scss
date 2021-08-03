@@ -1,9 +1,10 @@
-@import 'color.scss';
+@import "color.scss";
 
 @mixin light-solid-button($main-color: $light-primary) {
   outline: 0 !important;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 
   text-decoration: none;
   transition: all 0.2s ease;
@@ -54,6 +55,7 @@
   outline: 0 !important;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 
   text-decoration: none;
   transition: all 0.2s ease;
@@ -95,9 +97,13 @@
   }
 }
 
-@mixin light-line-button($main-color: $light-primary, $sub-color: $light-secondary) {
+@mixin light-line-button(
+  $main-color: $light-primary,
+  $sub-color: $light-secondary
+) {
   outline: 0 !important;
   border-radius: 8px;
+  cursor: pointer;
 
   text-decoration: none;
   transition: all 0.2s ease;
@@ -220,7 +226,10 @@
   }
 }
 
-@mixin dark-line-button($main-color: $light-primary, $sub-color: $light-secondary) {
+@mixin dark-line-button(
+  $main-color: $light-primary,
+  $sub-color: $light-secondary
+) {
   outline: 0 !important;
   border-radius: 8px;
 

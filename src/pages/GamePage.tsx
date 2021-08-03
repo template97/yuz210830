@@ -1,19 +1,19 @@
-import "./MainPage.scss";
+import "./GamePage.scss";
 import React, { useEffect, useState } from "react";
 import ButtonSolid from "../components/Buttons/ButtonSolid";
 import { useHistory } from "react-router-dom";
 
 interface Props {}
-const MainPage: React.FC<Props> = (props) => {
+const GamePage: React.FC<Props> = (props) => {
   const history = useHistory();
 
   return (
-    <div className="main-page">
+    <div className="game-page">
       <ButtonSolid size="large" onClick={() => history.push("/start")}>
-        Start
+        game
       </ButtonSolid>
     </div>
   );
 };
 
-export default MainPage;
+export default GamePage;
