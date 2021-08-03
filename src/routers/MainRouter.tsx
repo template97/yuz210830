@@ -7,7 +7,9 @@ const MainRouter: React.FC = () => {
     <>
       <div id="layout" className="notranslate">
         <Switch>
-          <Route exact path="/"></Route>
+          <Route exact path="/">
+            hello
+          </Route>
         </Switch>
       </div>
     </>
