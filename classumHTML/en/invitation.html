@@ -107,10 +107,7 @@
         justify-content: center;
         gap: 8px;
         width: 100%;
-        max-width: 658px;
         padding: 32px 0;
-        margin-top: 40px;
-        box-sizing: border-box;
         border: 1px solid #d7dbe7;
         border-radius: 8px;
       }
@@ -135,7 +132,7 @@
       }
       .footer{
         width: 100%;;
-        max-width: 658px;
+        max-width: 722px;
         box-sizing: border-box;
         padding: 20px 32px 50px;
 
@@ -177,22 +174,24 @@
         Hello, this is CLASSUM.<br/>
         {{ spaceOwner }} invited {{ email }} to space {{ spaceName }} to space {{ role }} role.
       </div>
-      <div class="context-box">
-        <img
-          src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/x-large-48-free-round.png"
-          width="48px"
-          height="48px"
-          alt="free-round"
-       />
-       <span id="space-name">{{ spaceName }}</span>
-       <span id="owner">{{ spaceOwner }}</span>
-        <a
-          class="submit"
-          target="_blank"
-          href="{{ joinLink }}"
-          >
-          Go to Space
-        </a>
+      <div class="context">
+        <div class="context-box">
+          <img
+            src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/x-large-48-free-round.png"
+            width="48px"
+            height="48px"
+            alt="free-round"
+         />
+         <span id="space-name">{{ spaceName }}</span>
+         <span id="owner">{{ spaceOwner }}</span>
+          <a
+            class="submit"
+            target="_blank"
+            href="{{ joinLink }}"
+            >
+            Go to Space
+          </a>
+        </div>
       </div>
     </div>
     <div
