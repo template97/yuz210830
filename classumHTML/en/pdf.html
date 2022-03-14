@@ -1,241 +1,211 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <link
-      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>HTML Email Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      body,
+      #main-body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        font-family: Inter, 'Nanum Myeongjo';
+      }
+      a,
+      img,
+      button{
+        border: 0;
+        outline: none;
+        text-decoration: none;
+      }
+      .imageFix {
+        display: block;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      /* Outlook 2007 이상에서 Outlook이 추가하는 테이블 주위의 간격을 제거 */
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      /* Internet Explorer에서 크기가 조정된 이미지를 렌더링하는 방식을 수정 */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* Webkit 및 Windows 기반 클라이언트가 텍스트 크기를 자동으로 조정하지 않도록 수정 */
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .context{
+        width: 100%;
+        max-width: 722px;
+        padding: 0 32px;
+        box-sizing: border-box;
+        margin-top: 40px;
+      }
+      .logo{
+        margin-top: 40px;
+      }
+      .title{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+        color: #0c0e12;
+        margin-top: 24px;
+      }
+      .description{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: normal;
+        text-align: left;
+        color: #0c0e12;
+        margin-top: 24px;
+      }
+      .context-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 658px;
+        padding: 32px 0;
+        margin-top: 40px;
+        box-sizing: border-box;
+        border: 1px solid #d7dbe7;
+        border-radius: 8px;
+      }
+      .submit{
+        padding: 13px 28px;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-color: #0c0e12;
+
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+
+      }
+      .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 0 0;
+        background-color: #3d4458;
+      }
+      .footer{
+        width: 100%;;
+        max-width: 658px;
+        box-sizing: border-box;
+        padding: 20px 32px 50px;
+
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: left;
+        color: #bcc4d8
+      }
+      #space-name{
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 26px;
+        color: #0c0e12
+      }
+      #owner{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #bcc4d8;
+      }
+    </style>
   </head>
   <body>
-    <table
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      width="100%"
-      id="body-table"
-      style="
-        font-family: Spoqa Han Sans Regular, Spoqa Han Sans JP Regular,
-          Sans-serif;
-      "
+    <div
+      class="container"
+      id="main-body"
     >
-      <tbody>
-        <tr>
-          <td>
-            <table border="0" cellpadding="0" cellspacing="0" width="672">
-              <thead>
-                <tr>
-                  <td style="padding: 28px 40px; box-sizing: border-box">
-                    <table width="100%">
-                      <tbody>
-                        <tr>
-                          <td id="classum logo" width="50%">
-                            <img
-                              src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/classum_logo.png"
-                              alt="Classum-Logo"
-                              style="height: 18px"
-                            />
-                          </td>
-                          <td
-                            id="language"
-                            width="50%"
-                            style="font-size: 14px; text-align: right"
-                          >
-                            <b>ENG</b>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td
-                    style="
-                      padding: 24px 40px;
-                      box-sizing: border-box;
-                      text-align: center;
-                    "
-                  >
-                    <table style="display: inline-block">
-                      <tr>
-                        <td
-                          style="
-                            width: 88px;
-                            height: 88px;
-                            padding: 4.4px 0;
-                            box-sizing: border-box;
-                            border-radius: 44px;
-                            background-color: #ffeece;
-                            overflow: hidden;
-                          "
-                        >
-                          <img
-                            src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/Anna.png"
-                            alt="Anna profile"
-                            style="height: 100%"
-                          />
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 4px 40px;
-                      box-sizing: border-box;
-                      font-size: 28px;
-                      font-weight: bold;
-                      text-align: center;
-                      line-height: 40px;
-                    "
-                  >
-                    <b>[CLASSUM] Requested PDF file of your class</b>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 4px 40px;
-                      box-sizing: border-box;
-                      font-size: 12px;
-                      text-align: center;
-                      color: #9b9b9b;
-                    "
-                  >
-                    {{ displayTime }}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 16px 40px;
-                      box-sizing: border-box;
-                      text-align: center;
-                    "
-                  >
-                    <table style="display: inline-block">
-                      <tr>
-                        <td
-                          width="448px"
-                          style="
-                            font-size: 16px;
-                            line-height: 24px;
-                            text-align: left;
-                          "
-                        >
-                          Hello, {{firstName}} {{lastName}}. This is Anna from
-                          CLASSUM.<br />
-                          The requested PDF of [{{courseName}}] is attached to
-                          this email.<br />
-                          The attached file will be available until 1 day.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 16px 40px;
-                      box-sizing: border-box;
-                      text-align: center;
-                    "
-                  >
-                    <div
-                      style="
-                        display: inline-block;
-                        background-color: #ff5a5a;
-                        border-radius: 40px;
-                        padding: 12px 40px;
-                        align-items: center;
-                      "
-                    >
-                      <a
-                        href="{{ downloadLink }}"
-                        style="
-                          text-decoration: none;
-                          color: white;
-                          font-size: 20px;
-                          font-weight: bold;
-                        "
-                      >
-                        Download PDF
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 16px 40px;
-                      box-sizing: border-box;
-                      text-align: center;
-                    "
-                  >
-                    <table style="display: inline-block">
-                      <tr>
-                        <td
-                          width="448px"
-                          style="
-                            font-size: 16px;
-                            line-height: 24px;
-                            text-align: left;
-                          "
-                        >
-                          Please contact us at anna@classum.com should you have
-                          any questions or concerns.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td style="padding: 0 40px; box-sizing: border-box">
-                    <hr style="margin: 0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 24px 0px;
-                      box-sizing: border-box;
-                      font-size: 12px;
-                      line-height: 20px;
-                      color: #9b9b9b;
-                      text-align: center;
-                    "
-                  >
-                    Copyright ⓒ 2020 CLASSUM Co., Ltd. All rights reserved.<br />
-                    Tel. (+82) 02-6091-2897 | Email. contact@classum.com
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align: center">
-                    <img
-                      src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/classum-logo-gray.png"
-                      alt="classum logo"
-                      style="height: 12px"
-                    />
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="context logo">
+        <img
+        src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/small-18-logo-logo-type.svg"
+        height="18px"
+        alt="Classum-Logo"
+       />
+      </div>
+      <div class="context title">I'm sending the lecture materials you requested!</div>
+      <div class="context description">
+        Hello, Anne. This is CLASSUM.<br/>
+        Attached is the {{ spaceName }} lecture material you requested. The attached materials can be downloaded until {{ expiredAt }}.
+      </div>
+      <div class="context-box">
+        <img
+          src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/x-large-48-contents-file.png"
+          width="48px"
+          height="48px"
+          alt="free-round"
+       />
+       <span id="space-name">{{ spaceName }}</span>
+       <span id="owner">{{ spaceOwner }}</span>
+        <a
+          class="submit"
+          target="_blank"
+          href="{{ joinLink }}"
+          >
+          Download lecture materials
+        </a>
+      </div>
+    </div>
+    <div
+      class="footer-container"
+      >
+      <div
+        class="footer"
+        >
+        * CLASSUM is optimized for Chrome and Edge.<br />
+        * This e-mail is outgoing-only and cannot be replied to.<br /><br />
+        Copyright ⓒ 2022 CLASSUM Co., Ltd. All rights reserved.<br />
+        Tel. (+82) 02-6091-2897 | Email. contact@classum.com<br />
+      </div>
+    </div>
   </body>
 </html>
