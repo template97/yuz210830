@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Email Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      body,
+      #bodyTable {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+      }
+      #bodyTable {
+        padding: 20px 0 30px 0;
+        background-color: #ffffff;
+      }
+      img,
+      a img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+      }
+      .imageFix {
+        display: block;
+      }
+      table,
+      td {
+        border-collapse: collapse;
+      }
+
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      /* Outlook 2007 이상에서 Outlook이 추가하는 테이블 주위의 간격을 제거 */
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      /* Internet Explorer에서 크기가 조정된 이미지를 렌더링하는 방식을 수정 */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* Webkit 및 Windows 기반 클라이언트가 텍스트 크기를 자동으로 조정하지 않도록 수정 */
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      id="body-table"
+      style="font-family: Spoqa Han Sans Regular, Spoqa Han Sans JP Regular, Sans-serif; max-width:600px;"
+    >
+      <tr>
+        <td align="center" width="600px">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td align="center">
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="85%"
+                  class="title"
+                  id="title-table"
+                  style="height:96px"
+                >
+                  <tr>
+                    <td class="title-classum" style="width:97px;">
+                      <img
+                        src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/classum_logo.png"
+                        width="97px"
+                        height="16px"
+                        alt="Classum-Logo"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr height="20px"></tr>
+            <tr>
+              <td>
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  height="180px"
+                  class="sub-title"
+                  id="sub-title-table"
+                >
+                  <tr>
+                    <td align="center" class="alarm-img">
+                      <img
+                        src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/p43.png"
+                        width="100px"
+                        height="100px"
+                        alt="Alarm-Image"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      class="alarm-text"
+                      style="font-size:20px; color:#000000; font-weight:bold; padding-top:20px"
+                    >
+                      <b>メールアドレス認証</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      class="alarm-date"
+                      style="font-size:12px; color:#9B9B9B; padding-top: 15px"
+                    >
+                      {{ displayTime }}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr height="40px"></tr>
+            <tr>
+              <td
+                align="center"
+                class="td14"
+                style="font-size: 14px; color: #4B4B4B; line-height:160%;"
+              >
+                <table border="0" cellpadding="0" cellspacing="0" width="70%">
+                  <tr>
+                    <td>
+                      CLASSUMへようこそ！<br />
+                      下のリンクをクリックしてメールアドレスの認証をしてください。<br /><br />
+
+                      認証リンクの有効期限は
+                      <span
+                        style="color:#FF5A5A; display:inline-block; margin:0 0 0 0;"
+                        >２４時間です。</span
+                      >
+                      <p style="color:#FF5A5A">
+                        * CLASSUMはChromeとEdgeに最適化されています。
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr height="32px"></tr>
+            <tr>
+              <td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="230px" height="48px" class="button-box" id="button-table"
+                style="border-collapse:separate!important; border-radius:40px; background:#FF5A5A;">
+                <tr>
+                  <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" width="auto">
+                      <tr>
+                        <td width="40px">
+                          <img
+                            src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/ok_finger.png"
+                            width="30px"
+                            height="30px"
+                            alt="Right-Finger"
+                          />
+                        </td>
+                        <td style="font-size:20px; line-height:32px; font-weight: 700; color:#ffffff;">
+                          <a
+                              style="text-decoration: none; color:#ffffff;"
+                              target="_blank"
+                              href="{{ verificationLink }}"
+                          >
+                            認証
+                          </a>
+                        </td>
+                        </a>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr height="32px">
+              <td width="100%"></td>
+            </tr>
+            <tr>
+              <td align="center">
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="79%"
+                  class="footer"
+                  id="footer-table"
+                >
+                  <tr>
+                    <td class="divider" style="border:1px solid #F0F0F0;"></td>
+                  </tr>
+                  <tr height="20px"></tr>
+                  <tr>
+                    <td
+                      align="center"
+                      class="footer-information"
+                      style="font-size:9px; color:#9B9B9B; line-height:160%;"
+                    >
+                      * このメールは送信専用のメールアドレスから配信されています。ご返信いただいてもお答えできませんのでご了承ください。<br />
+                      Copyright ⓒ 2020 CLASSUM Co., Ltd. All rights reserved.<br />
+                      Tel. (+82) 02-6091-2897 | Email. contact@classum.com<br />
+                    </td>
+                  </tr>
+                  <tr height="20px"></tr>
+                  <tr>
+                    <td>
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td align="center">
+                            <img
+                              src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/classum_logo_small.png"
+                              width="61px"
+                              height="10px"
+                              alt="Classum-Small-Logo"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr height="30px"></tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

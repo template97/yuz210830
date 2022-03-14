@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Email Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      id="body-table"
+      style="
+        font-family: Spoqa Han Sans Regular, Spoqa Han Sans JP Regular,
+          Sans-serif;
+      "
+    >
+      <tbody>
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="672">
+              <thead>
+                <tr>
+                  <td style="padding: 28px 40px; box-sizing: border-box">
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <td id="classum logo" width="50%">
+                            <img
+                              src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/classum_logo.png"
+                              alt="Classum-Logo"
+                              style="height: 18px"
+                            />
+                          </td>
+                          <td
+                            id="language"
+                            width="50%"
+                            style="font-size: 14px; text-align: right"
+                          >
+                            <b>ENG</b>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      padding: 24px 40px;
+                      box-sizing: border-box;
+                      text-align: center;
+                    "
+                  >
+                    <table style="display: inline-block">
+                      <tr>
+                        <td
+                          style="
+                            width: 88px;
+                            height: 88px;
+                            padding: 4.4px 0;
+                            box-sizing: border-box;
+                            border-radius: 44px;
+                            background-color: #ffeece;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/Anna.png"
+                            alt="Anna profile"
+                            style="height: 100%"
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 4px 40px;
+                      box-sizing: border-box;
+                      font-size: 28px;
+                      font-weight: bold;
+                      text-align: center;
+                      line-height: 40px;
+                    "
+                  >
+                    <b>[CLASSUM] Requested PDF file of your class</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 4px 40px;
+                      box-sizing: border-box;
+                      font-size: 12px;
+                      text-align: center;
+                      color: #9b9b9b;
+                    "
+                  >
+                    {{ displayTime }}
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 16px 40px;
+                      box-sizing: border-box;
+                      text-align: center;
+                    "
+                  >
+                    <table style="display: inline-block">
+                      <tr>
+                        <td
+                          width="448px"
+                          style="
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: left;
+                          "
+                        >
+                          Hello, {{firstName}} {{lastName}}. This is Anna from
+                          CLASSUM.<br />
+                          The requested PDF of [{{courseName}}] is attached to
+                          this email.<br />
+                          The attached file will be available until 1 day.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 16px 40px;
+                      box-sizing: border-box;
+                      text-align: center;
+                    "
+                  >
+                    <div
+                      style="
+                        display: inline-block;
+                        background-color: #ff5a5a;
+                        border-radius: 40px;
+                        padding: 12px 40px;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="{{ downloadLink }}"
+                        style="
+                          text-decoration: none;
+                          color: white;
+                          font-size: 20px;
+                          font-weight: bold;
+                        "
+                      >
+                        Download PDF
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 16px 40px;
+                      box-sizing: border-box;
+                      text-align: center;
+                    "
+                  >
+                    <table style="display: inline-block">
+                      <tr>
+                        <td
+                          width="448px"
+                          style="
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: left;
+                          "
+                        >
+                          Please contact us at anna@classum.com should you have
+                          any questions or concerns.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td style="padding: 0 40px; box-sizing: border-box">
+                    <hr style="margin: 0" />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 24px 0px;
+                      box-sizing: border-box;
+                      font-size: 12px;
+                      line-height: 20px;
+                      color: #9b9b9b;
+                      text-align: center;
+                    "
+                  >
+                    Copyright ⓒ 2020 CLASSUM Co., Ltd. All rights reserved.<br />
+                    Tel. (+82) 02-6091-2897 | Email. contact@classum.com
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">
+                    <img
+                      src="https://classum-public-assets.s3.ap-northeast-2.amazonaws.com/email-template-icons/classum-logo-gray.png"
+                      alt="classum logo"
+                      style="height: 12px"
+                    />
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
